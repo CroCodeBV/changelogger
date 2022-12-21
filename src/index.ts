@@ -1,1 +1,0 @@
-export const foo = (a: string) => console.log("hello" + a);
