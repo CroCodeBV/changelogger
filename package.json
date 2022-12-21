@@ -1,0 +1,10 @@
+{
+  "name": "changelogger",
+  "version": "1.0.0",
+  "description": "Manage your JS/TS changelog conflict free",
+  "main": "/bin/help.js",
+  "repository": "git@github.com:CroCodeBV/changelogger.git",
+  "author": "jeffrey@crocode.nl",
+  "license": "MIT",
+  "private": true
+}
