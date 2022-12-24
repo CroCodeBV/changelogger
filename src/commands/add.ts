@@ -48,7 +48,7 @@ export const add = async() => {
   }
   
   try {
-    await fs.writeFile(`${dir}/${new Date().getTime()}`, entry);
+    await fs.writeFile(`${dir}/${new Date().getTime()}.txt`, entry);
     console.log(chalk.green('Successfully created changelog entry, be sure to run "changelogger merge" to merge your changes into CHANGELOG.md'));
   } catch (err) {
     console.error(chalk.red('Failed to create changelog entry'));
