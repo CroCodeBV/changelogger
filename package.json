@@ -2,6 +2,7 @@
   "name": "changelogger",
   "version": "0.1.0",
   "description": "Manage your JS/TS changelog conflict free",
+  "type": "module",
   "files": [
     "!lib/__tests__/**/*",
     "lib/**/*",
