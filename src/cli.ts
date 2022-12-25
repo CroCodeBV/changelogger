@@ -4,6 +4,8 @@ import { add } from './commands/add';
 import figlet from 'figlet';
 import clear from 'clear';
 import chalk from 'chalk';
+import { merge } from './commands/merge';
+import { initiate } from './commands/initiate';
 
 clear();
 console.log(
@@ -14,6 +16,12 @@ console.log(
 program
   .version('0.1.0')
   .description('Changelogger CLI')
+
+  program
+  .command('initiate')
+  .alias('i')
+  .description('initiate a new changelog file')
+  .action(initiate)
 
 program
   .command('list')
@@ -33,10 +41,10 @@ program
   .description('add a new changelog entry')
   .action(add);
 
-// program
-//   .command('merge')
-//   .alias('m')
-//   .description('merge changelog entries into CHANGELOG.md')
-//   .error("Not implemented yet!")
+program
+  .command('merge')
+  .alias('m')
+  .description('merge changelog entries into CHANGELOG.md')
+  .action(merge)
 
 program.parse(process.argv);

@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
 import { simpleGit, SimpleGit, CleanOptions } from 'simple-git';
+import { EntryType } from '../utils/ChangelogEntry';
 
 const git: SimpleGit = simpleGit().clean(CleanOptions.FORCE);
 
@@ -30,7 +31,7 @@ export const add = async() => {
       default: `${name}<${email}>`,
     },
   ]) as {
-    type: string;
+    type: EntryType;
     title: string;
     author: string;
   };
