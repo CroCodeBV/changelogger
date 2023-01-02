@@ -1,6 +1,6 @@
 {
   "name": "changelogger",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Manage your JS/TS changelog conflict free",
   "type": "module",
   "files": [
