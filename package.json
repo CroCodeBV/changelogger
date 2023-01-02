@@ -1,10 +1,49 @@
 {
   "name": "changelogger",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Manage your JS/TS changelog conflict free",
-  "main": "/bin/help.js",
+  "type": "module",
+  "files": [
+    "!lib/__tests__/**/*",
+    "lib/**/*",
+    "bin/**/*"
+  ],
+  "bin": {
+    "changelogger": "./bin/index.js"
+  },
   "repository": "git@github.com:CroCodeBV/changelogger.git",
   "author": "jeffrey@crocode.nl",
   "license": "MIT",
-  "private": true
+  "keywords": [
+    "changelog",
+    "npm",
+    "package"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf ./lib/*",
+    "lint": "eslint ./src/ --fix",
+    "start": "TS_NODE_FILES=true ts-node ./src/changelogger.ts"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.2",
+    "@types/figlet": "^1.5.5",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.11.17",
+    "eslint": "^8.30.0",
+    "eslint-plugin-node": "^11.1.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "clear": "^0.1.0",
+    "commander": "^9.4.1",
+    "figlet": "^1.5.2",
+    "inquirer": "^9.1.4",
+    "meow": "^11.0.0",
+    "path": "^0.12.7",
+    "simple-git": "^3.15.1"
+  }
 }
