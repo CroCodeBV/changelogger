@@ -1,5 +1,5 @@
 {
-  "name": "changelogger",
+  "name": "@crocode/changelogger",
   "version": "0.0.1",
   "description": "Manage your JS/TS changelog conflict free",
   "type": "module",
