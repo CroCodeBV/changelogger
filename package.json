@@ -1,7 +1,8 @@
 {
   "name": "@crocode/changelogger",
   "version": "0.0.1",
-  "description": "Manage your JS/TS changelog conflict free",
+  "description": "[ARCHIVED] Superseded by Changesets (https://github.com/changesets/changesets). Manage your JS/TS changelog conflict free.",
+  "private": true,
   "type": "module",
   "files": [
     "!lib/__tests__/**/*",
